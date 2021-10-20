@@ -2620,7 +2620,7 @@ const struct Item gItems[] =
         .name = _("Mental Herb"),
         .itemId = ITEM_MENTAL_HERB,
         .price = 4000,
-        .holdEffect = HOLD_EFFECT_CURE_ATTRACT,
+        .holdEffect = HOLD_EFFECT_MENTAL_HERB,
         .description = sMentalHerbDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -2628,7 +2628,7 @@ const struct Item gItems[] =
     },
 
     [ITEM_CHOICE_BAND] =
-    {
+    {   
         .name = _("Choice Band"),
         .itemId = ITEM_CHOICE_BAND,
         .price = 4000,
@@ -6301,7 +6301,7 @@ const struct Item gItems[] =
         .name = _("SafetyGoggles"),
         .itemId = ITEM_SAFETY_GOGGLES,
         .price = 4000,
-        .holdEffect = HOLD_EFFECT_SAFETY_GOOGLES,
+        .holdEffect = HOLD_EFFECT_SAFETY_GOGGLES,
         .description = sSafetyGogglesDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
