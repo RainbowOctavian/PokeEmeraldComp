@@ -22,10 +22,12 @@
 #include "string_util.h"
 #include "bg.h"
 #include "script_pokemon_util.h"
+
 #include "decompress.h"
 #include "pokemon_icon.h"
 #include "battle.h"
 #include "trainer_pokemon_sprites.h"
+
 #include "item.h"
 #include "item_icon.h"
 #include "constants/items.h"
