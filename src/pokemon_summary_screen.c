@@ -635,7 +635,7 @@ static const struct WindowTemplate sPageSkillsTemplate[] =
         .tilemapTop = 7,
         .width = 6,
         .height = 6,
-        .paletteNum = 6,
+        .paletteNum = 15,
         .baseBlock = 489,
     },
     [PSS_DATA_WINDOW_SKILLS_STATS_RIGHT] = {
@@ -644,7 +644,7 @@ static const struct WindowTemplate sPageSkillsTemplate[] =
         .tilemapTop = 7,
         .width = 3,
         .height = 6,
-        .paletteNum = 6,
+        .paletteNum = 15,
         .baseBlock = 525,
     },
     [PSS_DATA_WINDOW_EXP] = {
@@ -3442,9 +3442,9 @@ static void PrintRibbonCount(void)
 
 static void BufferStat(u8 *dst, s8 natureMod, u32 stat, u32 strId, u32 n)
 {
-    static const u8 sTextNatureDown[] = _("{COLOR 05}");
-    static const u8 sTextNatureUp[] = _("{COLOR 08}");
-    static const u8 sTextNatureNeutral[] = _("{COLOR 01}");
+    static const u8 sTextNatureDown[] = _("{COLOR 04}");
+    static const u8 sTextNatureUp[] = _("{COLOR 06}");
+    static const u8 sTextNatureNeutral[] = _("{COLOR 10}");
     u8 *txtPtr;
 
     if (natureMod == 0)
