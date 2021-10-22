@@ -98,7 +98,7 @@ LittlerootTown_MaysHouse_2F_EventScript_MeetMayNorth::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestLeft
 	waitmovement 0
 	msgbox RivalsHouse_2F_Text_MayWhoAreYou, MSGBOX_DEFAULT
-	givemon SPECIES_EEVEE, 5, ITEM_SILK_SCARF
+	givecustommon SPECIES_EEVEE, 5, ITEM_SILK_SCARF, ITEM_PREMIER_BALL, NATURE_MODEST, 1, 0 , 0 , 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
 	msgbox Text_ReceivedEEVEE, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_MaysHouse_2F_Movement_PlayerWatchMayNorth
@@ -112,7 +112,7 @@ LittlerootTown_MaysHouse_2F_EventScript_MeetMaySouth::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestLeft
 	waitmovement 0
 	msgbox RivalsHouse_2F_Text_MayWhoAreYou, MSGBOX_DEFAULT
-	givemon SPECIES_EEVEE, 5, ITEM_SILK_SCARF
+	givecustommon SPECIES_EEVEE, 5, ITEM_SILK_SCARF, ITEM_PREMIER_BALL, NATURE_MODEST, 1, 0 , 0 , 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
 	msgbox Text_ReceivedEEVEE, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_MaysHouse_2F_Movement_PlayerWatchMaySouth
@@ -126,7 +126,7 @@ LittlerootTown_MaysHouse_2F_EventScript_MeetMayWest::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestUp
 	waitmovement 0
 	msgbox RivalsHouse_2F_Text_MayWhoAreYou, MSGBOX_DEFAULT
-	givemon SPECIES_EEVEE, 5, ITEM_SILK_SCARF
+	givecustommon SPECIES_EEVEE, 5, ITEM_SILK_SCARF, ITEM_PREMIER_BALL, NATURE_MODEST, 1, 0 , 0 , 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
 	msgbox Text_ReceivedEEVEE, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_RIVAL, LittlerootTown_MaysHouse_2F_Movement_MayWalkToPCWest
@@ -139,7 +139,7 @@ LittlerootTown_MaysHouse_2F_EventScript_MeetMayEast::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestLeft
 	waitmovement 0
 	msgbox RivalsHouse_2F_Text_MayWhoAreYou, MSGBOX_DEFAULT
-	givemon SPECIES_EEVEE, 5, ITEM_SILK_SCARF
+	givecustommon SPECIES_EEVEE, 5, ITEM_SILK_SCARF, ITEM_PREMIER_BALL, NATURE_MODEST, 1, 0 , 0 , 0, 0, 0, 0, 31, 31, 31, 31, 31, 31
 	msgbox Text_ReceivedEEVEE, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_MaysHouse_2F_Movement_PlayerWatchMayEast
