@@ -406,8 +406,16 @@ LittlerootTown_EventScript_GoSaveBirchTrigger::
 	end
 
 LittlerootTown_EventScript_TownSign::
-	msgbox LittlerootTown_Text_TownSign, MSGBOX_SIGN
+	checkflag FLAG_UNUSED_0x020
+	vgoto_if 1, Route117_ActivatedFlag
+	setflag FLAG_UNUSED_0x020
+	msgbox Route117_Text_FlagActivated, MSGBOX_NPC
 	end
+	
+Route117_ActivatedFlag::
+	clearflag FLAG_UNUSED_0x020
+	msgbox Route117_Text_FlagDeactivated, MSGBOX_NPC
+	end	
 
 LittlerootTown_EventScript_BirchsLabSign::
 	msgbox LittlerootTown_Text_ProfBirchsLab, MSGBOX_SIGN
@@ -1069,4 +1077,10 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I gave you?\p"
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
+	
+Route117_Text_FlagActivated: 
+	.string "Wild encounter activated$"
+	
+Route117_Text_FlagDeactivated: 
+	.string "Wild encounter deactivated$"	
 
