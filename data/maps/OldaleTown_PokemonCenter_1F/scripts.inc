@@ -23,7 +23,15 @@ OldaleTown_PokemonCenter_1F_EventScript_Gentleman::
 	end
 
 OldaleTown_PokemonCenter_1F_EventScript_Boy::
-	msgbox OldaleTown_PokemonCenter_1F_Text_PokemonCentersAreGreat, MSGBOX_NPC
+	checkflag FLAG_UNUSED_0x020
+	vgoto_if 1, Azurill_ActivatedFlag
+	setflag FLAG_UNUSED_0x020
+	msgbox Azurill_Text_FlagActivated, MSGBOX_NPC
+	end
+
+Azurill_ActivatedFlag::
+	clearflag FLAG_UNUSED_0x020
+	msgbox Azurill_Text_FlagDeactivated, MSGBOX_NPC
 	end
 
 OldaleTown_PokemonCenter_1F_EventScript_Girl::
@@ -61,4 +69,16 @@ OldaleTown_PokemonCenter_1F_Text_TradedInWirelessClub:
 	.string "The POKéMON WIRELESS CLUB on\n"
 	.string "the second floor was built recently.\p"
 	.string "I traded POKéMON right away.$"
+	
+Azurill_Text_FlagActivated: 
+	.string "I have turned the wild\n"
+	.string "encounters back on for you.\p"
+	.string "Speak to me again if you\n"
+	.string "want to deactivate wild Pokemon!$"
+	
+Azurill_Text_FlagDeactivated: 
+	.string "I have turned off the wild\n"
+	.string "encounters for you at the moment.\p"
+	.string "Speak to me again if you\n"
+	.string "want to encounter wild Pokemon!$"		
 
